@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>RockPaperScissor</title>
+</head>
+
+<body>
+    <header>
+        Rock Paper Scissor
+    </header>
+
+    <main>
+
+        <div class="container common-style">
+            <div class="box"> 
+                <img class="img" src="media/rock.png" alt="">
+            </div>
+            <div class="box">
+                 <img class="img" src="media/paper.png" alt="">
+                </div>
+            <div class="box">
+                <img class="img" src="media/scissors.png" alt="">
+            </div>
+            
+        </div>
+        <div class="score-table common-style">
+            <div  class="score">
+               <h4 class="score-title">Your Score</h4>
+               <h3 id="user-score" class="score-value">0</h3>
+            </div>
+            <div  class="score">
+                <h4 class="score-title">Computer Score</h4>
+                <h3 id="comp-score" class="score-value">0</h3>
+            </div>
+      </div>
+      <div class="btns common-style" >    
+          <button class="btn" id="submit">Submit Your Choice</button>
+          <button class="btn" id="reset">Reset</button>
+      </div>
+      
+      <div class="common-style loader-container">
+        <div class="loader"></div>
+        <h3>Computer selecting choice</h3>
+      </div>
+      
+
+
+      <div class="common-style" id="msg-box">
+        <h3 class="msg" id="winner"></h3>
+        <h3 class="msg" id="user"></h3>
+        <h3 class="msg" id="comp"></h3>
+        
+      </div>
+       
+
+
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
